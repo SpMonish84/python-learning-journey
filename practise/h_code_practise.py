@@ -474,33 +474,33 @@
 #     print("Special Character")
 
 
-# Q1
-a conditional statement in python is used to control the flow in the program
-there are 3 types of conditional keywords if, else, elif
+# # Q1
+# a conditional statement in python is used to control the flow in the program
+# there are 3 types of conditional keywords if, else, elif
 
-if(condition)
-block of code
-else
-block of code
-here condition is true in the if block the code executes and exits the if else block
-if the condition is false in if block it executes the else block and exit the if elese statement
+# if(condition)
+# block of code
+# else
+# block of code
+# here condition is true in the if block the code executes and exits the if else block
+# if the condition is false in if block it executes the else block and exit the if elese statement
 
-if-elif-else
-in this it is used to execute multiple statements in the program,if the if block is false the elif
-block will execute or if the elif block is false, the else block is executed
-
-
-# Q2
-if - in the condition is false the it exits the if block and executes the remaining program
-if-else - if the condition is false then the else block gets executed
+# if-elif-else
+# in this it is used to execute multiple statements in the program,if the if block is false the elif
+# block will execute or if the elif block is false, the else block is executed
 
 
-# Q3
-if the conditon is true it executes the particular block of code and executes the remaining program
+# # Q2
+# if - in the condition is false the it exits the if block and executes the remaining program
+# if-else - if the condition is false then the else block gets executed
 
-# Q4
-the print statement indentation is wrong in this program, because after if condition there should be indentation gap of 4 space or a single tab space
 
-# Q5
-if value: determines the truthness, for example value = True, then executes the if block or value = false, it executes the else block
-if value == True, checks the equality
+# # Q3
+# if the conditon is true it executes the particular block of code and executes the remaining program
+
+# # Q4
+# the print statement indentation is wrong in this program, because after if condition there should be indentation gap of 4 space or a single tab space
+
+# # Q5
+# if value: determines the truthness, for example value = True, then executes the if block or value = false, it executes the else block
+# if value == True, checks the equality
