@@ -415,3 +415,164 @@
 # print(type(largest_digit))
 
 
+
+
+# Count factors
+
+# step1: input int num
+# step2: create a empty list l1 and a count variable to count how many factors are prsesnt
+# step3: iterate through the num from 1 to num+1 using range to find the factors move to next condition
+# step4: check condition if num divided by the numbers present in between 1 and num+1 and if the remainder is equal to zero update the number in the empty list
+# step5: print the factors of num in the empty list
+# step6: print the count of how many factors for the num.
+
+# num = int(input("Enter the number to find its factors: "))
+# l1 = []
+# count = 0
+# if(num > 0 and num!= 0):
+#     for i in range(1, num + 1):
+#         if (num % i == 0):
+#             l1.append(i)
+# # without built in func to find the elements in sequence
+# # for i in l1:
+# #     count += 1
+# # print(count)
+# print("Factors of",num,"are:", l1,"and the count is:", len(l1))
+
+
+# Sum of factors
+
+# Sum of factors
+# step1: int input num
+# step2: create a empty list to store the factors of num, count variable to count the factors of num and total variable to store the sum of the factors of num
+# step3: iterate through the num using range from 1 to num+1 to find the factors
+# step4: check condition if num divided by numbers between num and num+1, if the remainder is equal to zero update the factors in the empty list
+# step5: print the updated list with the count of factors of num
+# step6: print the total, sum of factors of num
+
+# num = int(input("Enter the number to find its factors: "))
+# l1 = []
+# total = 0
+
+# if(num > 0):
+#     for i in range(1, num + 1):
+#         if num % i == 0:
+#             l1.append(i)
+#     print("Factors of ",num,"are:",l1,"and the count of factors:", len(l1))
+#     for i in l1:
+#         total += i
+#     print("sum of factors of",num,":", total)
+        
+# else:
+#     print("Enter positive number and above zero!")
+
+
+
+# Product of factors
+
+# num = int(input("Enter the number to find its factors: "))
+# l1 = []
+# product = 1
+# if(num > 0):
+#     for i in range(1, num + 1):
+#         if num % i == 0:
+#             l1.append(i)
+#     print("Factors of", num,"are:", l1, "and the count of factors are:", len(l1))
+#     for i in l1:
+#         product *= i
+#     print("Product of factors of", num, "are:", product)
+# else:
+#     print("Enter number above zero!")
+
+
+# Even factors
+# num = int(input("Enter the number to find its factors: "))
+# l1 = []
+# l2 = []
+# if(num > 0):
+#     for i in range(1, num + 1):
+#         if num % i == 0:
+#             l1.append(i)
+#     print("Factors of", num,"are:", l1, "and the count of factors are:", len(l1))
+#     for i in l1:
+#         if i % 2 == 0:
+#             l2.append(i)
+#     print("Even factors of", num,"are:", l2)
+            
+# else:
+#     print("Enter number above zero!")
+
+
+
+# # Odd Factors
+# num = int(input("Enter the number to find its factors: "))
+# l1 = []
+# l2 = []
+# if(num > 0):
+#     for i in range(1, num + 1):
+#         if num % i == 0:
+#             l1.append(i)
+#     print("Factors of", num,"are:", l1, "and the count of factors are:", len(l1))
+#     for i in l1:
+#         if i % 2 != 0:
+#             l2.append(i)
+#     print("Odd factors of", num,"are:", l2)
+            
+# else:
+#     print("Enter number above zero!")
+
+
+# Prime Factors
+# num = int(input("Enter the number to find its factors and prime factors: "))
+# l1 = []
+# l2 = []
+# if(num > 0):
+#     for i in range(1, num + 1):
+#         if num % i == 0:
+#             l1.append(i)
+#     print("Factors of", num,"are:", l1, "and the count of factors are:", len(l1))
+
+#     for f in l1:
+#         if f > 1:
+#             is_prime = True
+#             for j in range(2, f):
+#                 if f % j == 0:
+#                     is_prime = False
+#                     break
+#             if is_prime:
+#                 l2.append(f)
+#     print("prime factors of", num, "are:", l2)
+# else:
+#     print("Enter number above zero!")
+
+# prime number
+# num = int(input("Enter the number to find prime number or not: "))
+# l1 = []
+# if (num > 1):
+#     for i in range(1, num + 1):
+#         if num % i == 0:
+#             l1.append(i)
+#     if len(l1) == 2:
+#         print("Prime number")
+#     else:
+#         print("Not a prime number")
+# else:
+#     print("Enter a number above 1")
+
+
+# prime number
+# num = int(input("Enter a number: "))
+# if num > 1:
+#     # assume prime until proven otherwise
+#     is_prime = True
+#     for i in range(2, num):
+#         if num % i == 0:
+#             is_prime = False
+#             break
+    
+#     if is_prime:
+#         print(num, "is a Prime number")
+#     else:
+#         print(num, "is Not a prime number")
+# else:
+#     print("Enter a number greater than 1")
