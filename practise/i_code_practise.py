@@ -717,3 +717,5 @@
 # common = list(set(l1) & set(l2) & set(l3))
 # gcd = max(common)
 # print("GCD of", num1, num2, "&", num3, "are:", gcd)
+
+#
