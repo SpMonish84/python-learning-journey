@@ -576,3 +576,144 @@
 #         print(num, "is Not a prime number")
 # else:
 #     print("Enter a number greater than 1")
+
+
+
+# # Largest factor
+# num = int(input("Enter the number to find the factors: "))
+# l1 = []
+# largest = None
+
+# for i in range(1, num+1):
+#     if num % i == 0:
+#         l1.append(i)
+#         largest = i
+
+# print("Factors of", num, "are:", l1, "and count is:", len(l1))
+# print("Largest factor of", num, "is:", largest)
+
+
+
+# Smallest factor excluding itself
+
+# num = int(input("Enter the number to find the factors: "))
+# smallest = None
+
+# if num > 1:
+#     for i in range(2, num):
+#         if num % i == 0:
+#             smallest = i
+#             break
+
+#     if smallest:
+#         print("Smallest factor excluding itself:", smallest)
+#     else:
+#         print(num, "is prime, so it has no factors other than 1 and itself.")
+# else:
+#     print("Enter a number greater than 1")
+
+
+# # Factors within a range
+# num = int(input("Enter the number to find the factors: "))
+# l1 = []
+# l2 = []
+# for i in range(1, num+1):
+#     if num % i == 0:
+#         l1.append(i)
+# print("Factors of", num, "are:", l1, "and count is:", len(l1))
+# low = int(input("Enter the low range: "))
+# high = int(input("Enter the high range: "))
+# for i in l1:
+#     if i > low and i < high:
+#         l2.append(i)
+# print("The factors between range", low, "and", high, "are:", l2)
+
+
+
+# Prime number
+# n = int(input("Enter the number to check if prime or not: "))
+# primes = []
+# for i in range(2, n + 1):
+#     is_prime = True
+#     for j in range(2, int(i**0.5)+1):
+#         if i % j == 0:
+#             is_prime = False
+#             break
+#     if is_prime:
+#         primes.append(i)
+# print("prime number from 1 to", n, "are:", primes)
+
+# count of prime numbers
+# n = int(input("Enter the number to check if prime or not: "))
+# primes = []
+# for i in range(2, n + 1):
+#     is_prime = True
+#     for j in range(2, int(i**0.5)+1):
+#         if i % j == 0:
+#             is_prime = False
+#             break
+#     if is_prime:
+#         primes.append(i)
+# print("prime number from 1 to", n, "are:", primes, "and the count is:", len(primes))
+
+
+# sum of prime number from 1 to n
+# n = int(input("Enter the number to check if prime or not: "))
+# primes = []
+# total = 0
+# for i in range(2, n + 1):
+#     is_prime = True
+#     for j in range(2, int(i**0.5)+1):
+#         if i % j == 0:
+#             is_prime = False
+#             break
+#     if is_prime:
+#         primes.append(i)
+
+# for i in primes:
+#     total += i
+# print("prime number from 1 to", n, "are:", primes, "and the count is:", len(primes))
+# print("sum of prime numbers:", total)
+
+
+# go through prime numbers and its variations again
+
+
+# GCD of 2 numbers
+# num1 = int(input("Enter the first number: "))
+# num2 = int(input("Enter the second number: "))
+# l1 = []
+# l2 = []
+
+# for i in range(1, num1+1):
+#     if num1 % i == 0:
+#         l1.append(i)
+# for j in range(1, num2+1):
+#     if num2 % j == 0:
+#         l2.append(j)
+
+# common = list(set(l1) & set(l2))
+# gcd = max(common)
+# print("GCD of", num1, "&", num2, "are:", gcd)
+
+# GCD of 3 numbers
+# num1 = int(input("Enter the first number: "))
+# num2 = int(input("Enter the second number: "))
+# num3 = int(input("Enter the third number: "))
+# l1 = []
+# l2 = []
+# l3 = []
+
+# for i in range(1, num1+1):
+#     if num1 % i == 0:
+#         l1.append(i)
+# for j in range(1, num2+1):
+#     if num2 % j == 0:
+#         l2.append(j)
+# for k in range(1, num3+1):
+#     if num3 % k == 0:
+#         l3.append(k)
+
+# common = list(set(l1) & set(l2) & set(l3))
+# gcd = max(common)
+# print("GCD of", num1, num2, "&", num3, "are:", gcd)
