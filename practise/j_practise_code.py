@@ -269,3 +269,415 @@
 # print(res)
 
 
+# # # Create two functions:
+# # One returns the square of a number.
+# # Another returns the cube of a number.
+# # Call both and use their returned values in a calculation.
+
+# def square(n):
+#     return n*n
+
+# def cube(n):
+#     return n*n*n
+# num = int(input("Enter the number: "))
+# square_res = square(num)
+# cube_res = cube(num)
+
+# print("Square:", square_res)
+# print("Cube:", cube_res)
+# total_sum = square_res + cube_res
+# print("Sum of square and cube:", total_sum)
+
+#-------------------------------------------------------------------------
+# def greet(name = "User"):
+#     print("Welcome", name)
+
+# greet()
+# greet("Monish")
+
+# def student(name, age):
+#     print("My name is:", name)
+#     print("My age is:", age)
+
+# student("Monish",21)
+# # student(21, "Monish") positional arguments
+# student(name = "Monish", age = 21) # Keyword arguments
+
+
+# def student(name, age, course):
+#     print("My name is:", name)
+#     print("My age is:", age)
+#     print("My course is:", course)
+
+# student("Monish", course = "CSE", age = 21) # Positional and Keyword arguments
+# Note: Positional arguments must come before keyword arguments.
+
+# *args
+# def greet(*name):
+#     for i in name:
+#         print("Hello", i)
+# greet("Monish", "Virat", "ABD")
+# the *args are variable number of positional arguments stored as a tuple
+
+# def numbers(*args):
+#     total = 0
+#     for num in args:
+#         total += num
+#     return total
+# res = numbers(10,20,30,40)
+# print(res)
+
+
+
+# # **kwargs
+# def details(**kwargs):
+#     for i,j in kwargs.items():
+#         print(f"{i}: {j}")
+# details(name = "Monish", age = 21, course = "CSE", degree = "B.tech")
+# the **kwargs are variable number of keyword arguments stored as a dictionary
+
+
+# def animals(**kwargs):
+#     for key, value in kwargs.items():
+#         print(f"{key}: {value}")
+# animals(wild = ["lion","tiger","cheetah"], domestic = ["cow", "sheep", "pig"], pet = ["dog","cat","rabbit"])
+
+
+# # multiple return values
+# def calculate(a, b):
+#     return a+b,a-b,a*b,a/b,a//b,a**b
+# res = calculate(9,4)
+# print(res)
+
+
+# # multiple return values
+# def calculate(a, b):
+#     return{
+#         "add": a + b,
+#         "sub": a - b,
+#         "mul": a * b,
+#         "div": a / b,
+#         "floordiv": a // b,
+#         "power": a ** b
+#             }
+# res = calculate(9,4)
+# for key,value in res.items():
+#     print(f"{key}: {value}")
+
+# func calling other func
+# def square(n):
+#     return n*n
+
+# def cube(n):
+#     return square(n)*n
+
+# def total_sum(n):
+#     return square(n) + cube(n)
+# res = total_sum(2)
+# print(res)
+
+#----------------------------------------------------------------------------------------------------------------
+# Create a function get_number() that returns 50. Store the returned value in a variable and print it.
+# def get_number():
+#     return 50
+# res = get_number()
+# print(res)
+
+# Create a function test() that uses return without a value. Call the function and observe what it returns.
+# def test():
+#     return
+# test()
+# print(type(test()))
+
+# Create a function containing:
+# a print() before return
+# a return statement
+# a print() after return
+# Call the function and determine which statements execute.
+
+# def display():
+#     print("A")
+#     return
+#     print("B")
+# display()
+
+# Create two functions:
+# One containing only return
+# One containing only pass
+# Call both and determine the difference between their returned values.
+
+# def display_1():
+#     return
+
+# def display_2():
+#     pass
+
+# display_1()
+# display_2()
+
+
+#Create a function check_age(age).
+# If age is greater than or equal to 18, return "Eligible".
+# Otherwise, return "Not Eligible"
+
+# def check_age(age):
+#     if age >= 18:
+#         return "Eligible"
+#     return "Not Eligible"
+# res = check_age(19)
+# print(res)
+
+
+# -------------------------------------------------------------------------------------
+# Create:
+# calculate(a, b)
+# It should return:
+# sum
+# difference
+# Store both returned values in separate variables.
+
+# def calculate(a,b):
+#     return{
+#         "add": a+b,
+#         "diff": a-b
+#     }
+# res = calculate(20,10)
+# add = res["add"]
+# diff = res["diff"]
+# print("add:", add)
+# print("diff:", diff)
+
+# Return whether the given year is a leap year.
+# def is_leap_year(year):
+#     if year % 400 == 0:
+#         return "leap year"
+#     elif year % 100 == 0:
+#         return "Not leap year"
+#     elif year % 4 == 0:
+#         return "leap year"
+#     else:
+#         return "Not a leap year"
+# year = int(input("Enter the year: "))
+# res = is_leap_year(year)
+# print(res)
+
+
+# Create:
+# square(n)
+# and:
+# calculate(n)
+# calculate() should call square() and then add 10 to the returned result.
+
+# def square(n):
+#     return n*n
+
+# def calculate(n):
+#     return square(n) + 10
+
+# res = calculate(5)
+# print(res)
+
+
+
+# Create:
+# is_even(n)
+# and:
+# analyze(n)
+# analyze() should call is_even() and use its returned value to determine whether the number is even or odd.
+
+# def is_even(n):
+#     if n % 2 == 0:
+#         return "Even"
+#     else:
+#         return "Odd"
+# def analyze(n):
+#     return is_even(n)
+
+# num = int(input("Enter the number: "))
+# res = analyze(num)
+# print(res)
+
+
+# Assigning func to variable
+# def add(a,b):
+#     return a+b
+# a = add
+# print(a(1,2))
+# print(a(3,10))
+
+# lambda functions
+# lambda arguments: expression
+# square = lambda x: x*x
+# print(square(5))
+
+# def square(n):
+#     return n*n
+# print(square(5))
+
+# get_number = lambda : 100
+# double = lambda x : x * 2
+# add = lambda a,b : a + b
+# total_sum = lambda a, b, c : a + b + c
+
+# res = total_sum(5,2,10)
+# print(res)
+# print(type(res))
+
+
+#-----------------------------------------------
+# Create a lambda function that returns 100.
+# numbers = lambda : 100
+# print(numbers())
+
+
+# Create a lambda function that accepts one number and returns its square.
+# square = lambda x: x * x
+# a = int(input("enter the number: "))
+# print(square(a))
+
+
+# Create a lambda function that accepts one number and returns its cube.
+# cube = lambda x: x*x*x
+# a = int(input("enter the number: "))
+# print(cube(a))
+
+
+# Create a lambda function that accepts one number and returns its double.
+# double = lambda x : x * 2
+# a = int(input("enter the number: "))
+# print(double(a))
+
+
+# Create a lambda function that accepts three numbers and returns their average.
+# avg_numbers = lambda a,b,c : (a+b+c)//3
+# num1 = int(input("enter the number: "))
+# num2 = int(input("enter the number: "))
+# num3 = int(input("enter the number: "))
+# print(avg_numbers(num1,num2,num3))
+
+#-----------------------------------------------
+# Create a lambda function that accepts a number and returns "Even" or "Odd".
+# even_odd = lambda n: "Even" if n % 2 == 0 else "Odd"
+# a = int(input("enter the number: "))
+# print(even_odd(a))
+
+# Create a lambda function that accepts a number and returns "Positive", "Negative", or "Zero".
+# pos_neg_zero = lambda n :"Positive" if n > 0 else "Negative" 
+# a = int(input("enter the number: "))
+# print(pos_neg_zero(a))
+
+# Create a lambda function that accepts two numbers and returns the larger number.
+# largest_num = lambda m,n: m if m > n else n
+# a = int(input("enter the number: "))
+# b = int(input("enter the number: "))
+# print(largest_num(a,b))
+
+# Create a lambda function that accepts two numbers and returns the smaller number.
+# smallest_num = lambda m,n: m if m < n else n
+# a = int(input("enter the number: "))
+# b = int(input("enter the number: "))
+# print(smallest_num(a,b))
+
+# Create a lambda function that accepts a mark and returns "Pass" if the mark is at least 40, otherwise "Fail".
+# marks = lambda n: "pass" if n >= 40 else "fail"
+# a = int(input("enter the number: "))
+# print(marks(a))
+
+# Create a lambda function that accepts an age and returns "Adult" or "Minor".
+# age = lambda n: "adult" if n >= 18 else "minor"
+# a = int(input("enter the number: "))
+# print(age(a))
+
+
+#Create a lambda function that accepts a number and checks whether it is divisible by 5.
+# divisibility = lambda n: "Divisible" if n % 5 == 0 else "Not Divisible"
+# a = int(input("enter the number: "))
+# print(divisibility(a))
+
+
+#-----------------------------------------------------------------------
+# Create a lambda function that accepts a number and returns its last digit.
+# last_digit = lambda n: n % 10
+# a = int(input("enter the number: "))
+# print(last_digit(a))
+
+# Create a lambda function that accepts two numbers and returns their product.
+# product = lambda a,b : a*b
+# a = int(input("enter the number: "))
+# b = int(input("enter the number: "))
+# print(product(a,b))
+
+# Create a lambda function that accepts three numbers and returns the largest.
+# largest_number = lambda a,b,c : a if (a >= b and a >= c) else (b if b >= a and b >= c else c) 
+# num1 = int(input("enter the number: "))
+# num2 = int(input("enter the number: "))
+# num3 = int(input("enter the number: "))
+# print(largest_number(num1,num2,num3))
+
+
+# Recursion
+# def countdown(n):
+#     if n == 0:
+#         return
+#     print(n)
+#     countdown(n-1)
+
+# countdown(10)
+
+
+# A. Base case -tell us to stop here
+# B. Recursive case - where the func calls itself with smaller or simpler problem
+# Recursion follows LIFO where 
+# Going DOWN
+# → recursive calls are created
+
+# Going UP
+# → returned values are resolved
+
+# -----------------------------------------------------------------------------
+# Create a recursive function that prints numbers from n down to 1.
+
+# def countdown(n):
+#     if n == 0:
+#         return
+#     print(n)
+#     countdown(n-1)
+# countdown(5)
+
+
+# Create a recursive function that prints numbers from 1 up to n.
+# def count(n):
+#     if n == 0:
+#         return
+    
+#     count(n-1)
+#     print(n)
+# count(5)
+
+# Create a recursive function that prints "Hello" exactly n times.
+# def display(n):
+#     if n == 0:
+#         return
+#     print("Hello")
+#     display(n-1)
+# display(5)
+
+
+# Create a recursive function that prints all even numbers from n down to 2.
+# def even(n):
+#     if n < 2:
+#         return
+#     if n % 2 == 0:
+#         print(n)
+#         even(n - 2)
+
+# even(10)
+
+# Create a recursive function that prints all odd numbers from n down to 1.
+# def odd(n):
+#     if n < 1:
+#         return
+#     if n % 2 != 0:
+#         print(n)
+#     odd(n - 1)
+# odd(11)
