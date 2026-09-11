@@ -96,3 +96,24 @@ x = [10,20,30]
 # Python does not use Pass by Value or Pass by Reference. Python uses Pass by Object Reference (Call by Sharing). 
 # Function parameters receive references to the same objects. If the object is mutable and modified, changes are visible 
 # outside the function. If the parameter is reassigned, only the local reference changes and the original variable remains unaffected.
+
+
+
+
+
+# Escape sequence characters
+
+# | Escape | Name / Use                              | Example                    | Output             |
+# | :----: | --------------------------------------- | -------------------------- | ------------------ |
+# |  `\a`  | Bell / Alert (system beep)              | `print("Hello\aWorld")`    | May trigger a beep |
+# |  `\b`  | Backspace (deletes previous char)       | `print("Hello\bWorld")`    | `HellWorld`        |
+# |  `\f`  | Form feed (page break, legacy printers) | `print("Hello\fWorld")`    | Spacing varies     |
+# |  `\n`  | Newline (line break)                    | `print("Hello\nWorld")`    | `Hello`<br>`World` |
+# |  `\r`  | Carriage return (cursor to line start)  | `print("Hello\rWorld")`    | `Worldo`*          |
+# |  `\t`  | Horizontal tab                          | `print("Hello\tWorld")`    | `Hello    World`   |
+# |  `\v`  | Vertical tab                            | `print("Hello\vWorld")`    | Spacing varies     |
+# |  `\\`  | Literal backslash                       | `print("C:\\Users\\S")`    | `C:\Users\S`       |
+# |  `\'`  | Single quote                            | `print('It\'s fine')`      | `It's fine`        |
+# |  `\"`  | Double quote                            | `print("She said \"Hi\"")` | `She said "Hi"`    |
+
+
