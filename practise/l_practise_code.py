@@ -376,8 +376,8 @@ text = "Python"
 # print("Hello"+"\n"+"World")
 
 # Print:
-Name = "Monish"
-Age = "21"
-Course = "Computer Science"
-# using 
-print(Name+"\t"+Age+"\t"+Course)
+# Name = "Monish"
+# Age = "21"
+# Course = "Computer Science"
+# # using 
+# print(Name+"\t"+Age+"\t"+Course)
