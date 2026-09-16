@@ -262,4 +262,134 @@
 # print(txt.splitlines(keepends = True))
 #---------------------------------------------------------------------------------------------------------------
 
+# Replacement & Translation Methods
 
+# 39. replace() - returns a new string where all (or a specified number of) occurrences of a substring are replaced with another substring.
+# string.replace(old,new)
+# txt = "Python are easy"
+# print(txt.replace("are","is"))
+
+# string.replace(old, new, count) - we can limit the number of replacements
+# txt = "apple apple apple"
+# print(txt.replace("apple","banana",2))
+
+# 40. maketrans() - creates a translation table, It does not change the string by itself.The two strings must have the same length.
+# text = "abc bac cab"
+# table = str.maketrans("abc","123")
+# print(text.translate(table))
+
+# 41. translate() - applies a translation table created by maketrans()
+# table = str.maketrans("aeiou", "12345")
+# text = "education"
+# result = text.translate(table)
+# print(result)
+
+# deleting characters
+# table = str.maketrans("", "", "aeiou")
+# text = "programming"
+# result = text.translate(table)
+# print(result)
+
+#---------------------------------------------------------------------------------------------------------------------------------------------
+
+# Formatting Methods
+
+# 42. format() - replaces {} placeholders in a string with values. You can use multiple placeholders
+# "template {}".format(value)
+# name = "Monish"
+# txt = "Hello my name is {}".format(name)
+# print(txt)
+
+# positional arguments
+# txt = "Hello I'm {0}, and my age is {1}".format("Monish",21)
+# print(txt)
+
+# reuse of same arguments:
+# txt = "Helo I'm {0}, my age is {1}, {0} practices Python".format("Monish",21)
+# print(txt)
+
+# keyword arguments:
+# txt = "Hello I'm {name}, my age is {age}, {name} practices Python".format(name = "Monish", age = 21)
+# print(txt)
+
+# mixing positional and keyword arguments
+# txt = "Hello I'm {}, my age is {}, lives in {city}.".format(
+#     "Monish",
+#     21,
+#     city = "Bengaluru"
+# )
+# print(txt)
+
+# formatting numbers
+# price = 123.45678
+# text = "Price: {:.2f}".format(price)
+# print(text)
+
+# number formatting
+# d → integer
+# f → floating-point
+# % → percentage
+# , → thousands separator
+# b → binary
+# o → octal
+# x → hexadecimal
+
+# price = 1500000000
+# text = "Price {:.2%}".format(price)
+# print(text)
+
+# 43. format_map() - works similarly to format(), but instead of supplying separate arguments, it takes a mapping, usually a dictionary.
+# string.format_map(mapping)
+# data = {
+#     "name" : "Monish",
+#     "age" : 21
+# }
+# print("My name is {name}, and age is {age}".format_map(data))
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Encoding & Tab Methods
+
+# 44. encode() - converts a Python string (str) into bytes (bytes) using a specified character encoding.
+# string.encode(encoding="utf-8", errors="strict")
+# txt = "-"
+# print(txt.encode(encoding="utf-8"))
+# txt.encode(encoding="utf-8", errors=" ") # errors - strict, ignore, replace, xmlcharrefreplace, blackslashreplace
+# encoding - utf-8, utf-16, utf-32, ascii, latin-1, cp1252
+
+# 45. expandtabs() - replaces tab characters (\t) with spaces according to a specified tab size.
+# string.expandtabs(tabsize=8)
+# txt = "Python\tJava"
+# print(txt.expandtabs(tabsize = 10))
+
+# Create a string "Python" and encode it using the default encoding.
+# txt = "Python ⚡ Programming"
+# print(txt.encode(encoding = "utf-8", errors = "strict"))
+# print(txt.encode(encoding = "utf-8", errors = "ignore"))
+# print(txt.encode(encoding = "ascii", errors = "backslashreplace"))
+
+
+# Encode "Hello World" using explicitly specified UTF-8 encoding.
+# txt = "Hello World"
+# print(txt.encode(encoding = "utf-8"))
+#------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# 46. startswith() - checks whether a string begins with a specified substring.
+# string.startswith(prefix)
+# txt = "hello Python Programming"
+# # print(txt.startswith("Python"))
+
+# using start and end 
+# print(txt.startswith("Python",6))
+
+# multiple prefixes
+# print(txt.startswith(("Python", "hello","hi")))
+
+# 47. endswith() - checks whether a string ends with a specified substring.
+# string.endswith(suffix)
+# print(txt.endswith("Programming"))
+
+# multiple suffixes
+# file = "photo.jpg"
+# print(file.endswith(("Python",".jpg",".png",".img")))
+
+#----------------------------------------------------------------------------------------------------------------------------------------------
