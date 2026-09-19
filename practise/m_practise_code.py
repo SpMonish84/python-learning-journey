@@ -367,3 +367,236 @@
 # l1 = [23,12,44,20,49,58,29,48,56,19]
 # l1.sort(reverse = True)
 # print(l1[1])
+
+
+# Create a list containing 5 integers and print:
+# the first element
+# the last element
+# the middle element
+
+# l1 = [10,20,30,40,50]
+# first, *middle, last = l1
+# print(first)
+# print(last)
+# print(middle)
+
+
+#Given:
+# numbers = [10, 20, 30, 40, 50]
+# Change 30 to 100 and print the resulting list.
+
+# numbers = [10, 20, 30, 40, 50]
+# numbers[2] = 100
+# print(numbers)
+
+
+# Given:
+# numbers = [10, 20, 30]
+# Add 40 to the end using append().
+
+# numbers = [10, 20, 30]
+# numbers.append(40)
+# print(numbers)
+
+
+# Given:
+# numbers = [10, 20, 40, 50]
+# Insert 30 between 20 and 40 using insert().
+
+# numbers = [10, 20, 40, 50]
+# numbers.insert(2,30)
+# print(numbers)
+
+
+# numbers = [10, 20, 30, 20, 40]
+# Remove the first occurrence of 20.
+# numbers = [10, 20, 30, 20, 40]
+# numbers.remove(20)
+# print(numbers)
+
+
+# numbers = [10, 20, 30, 40, 50]
+# Remove the element at index 2 using pop() and print:
+# the removed element
+# the resulting list
+
+# numbers = [10, 20, 30, 40, 50]
+# removed = numbers.pop(2)
+# print(removed)
+# print(numbers)
+
+
+# numbers = [10, 20, 30, 40, 50, 60, 70]
+# Produce:
+# [20, 30, 40, 50]
+# using slicing.
+
+# numbers = [10, 20, 30, 40, 50, 60, 70]
+# print(numbers[1:5])
+
+
+
+# # numbers = [1, 2, 3, 4, 5]
+# Create a reversed list using slicing.
+# Do not use reverse().
+
+# numbers = [1, 2, 3, 4, 5]
+# print(numbers[::-1])
+
+
+
+# numbers = [10, 25, 30, 45, 50]
+# Write a program that checks whether 30 exists in the list.
+
+# numbers = [10,25,30,45,50]
+# target = 30
+# for i in numbers:
+#     if target == i:
+#         print("Target found at pos",numbers.index(i))
+
+
+
+#numbers = [10, 20, 30, 40, 50]
+#Print every element using a for loop.
+
+# numbers = [10, 20, 30, 40, 50]
+# for i in numbers:
+#     print(numbers.index(i), i)
+
+
+# Calculate the sum using iteration.
+# Do not use sum().
+
+# numbers = [10, 20, 30, 40, 50]
+# total_sum = 0
+# for i in numbers:
+#     total_sum += i
+# print(total_sum)
+
+
+# Count how many elements are even.
+# numbers = [12, 7, 8, 15, 20, 33, 42]
+# count = 0
+# for i in numbers:
+#     if i % 2 == 0:
+#         count += 1
+# print(count)
+
+
+# Calculate the sum of only the even elements.
+
+# numbers = [10, 15, 22, 31, 40, 51, 60]
+# count = 0
+# for i in numbers:
+#     if i % 2 == 0:
+#         count += i
+# print(count)
+
+
+
+# Find the largest element.
+# Do not use max().
+# numbers = [23, 7, 91, 45, 12, 67]
+# largest = numbers[0]
+# for i in numbers:
+#     if i > largest:
+#         largest = i
+# print(largest)
+
+
+# Find the smallest element.
+# Do not use min().
+
+# numbers = [23, 7, 91, 45, 12, 67]
+# smallest = numbers[0]
+# for i in numbers:
+#     if i < smallest:
+#         smallest = i
+# print(smallest)
+
+
+
+# Count how many times 2 occurs.
+# Don't use count() for this question.
+
+# numbers = [2, 5, 2, 8, 2, 9, 5]
+# target = 2
+# count = 0
+# for i in numbers:
+#     if i == target:
+#         count += 1
+# print(count)
+
+
+# [1, 4, 9, 16, 25]
+# First solve it using a normal loop.
+# Then solve it using list comprehension.
+
+# numbers = [1, 2, 3, 4, 5]
+# square = []
+# for i in numbers:
+#     num = i*i
+#     square.append(num)
+# print(square)
+
+# numbers = [x*x for x in range(1,6)]
+# print(numbers)
+
+
+
+
+# Create a new list containing only numbers greater than 10.
+# Solve using:
+# normal loop
+# list comprehension
+
+# numbers = [12, 5, 18, 3, 25, 8, 30]
+# great = []
+# for i in numbers:
+#     if i > 10:
+#         great.append(i)
+# print(great)
+
+
+# num = []
+# great = [num.append(i) for i in numbers if i > 10]
+# print(num)
+
+
+
+# Remove every occurrence of 10.
+# Don't simply use remove() once.
+# numbers = [10, 20, 10, 30, 10, 40, 50]
+# removed = []
+# res = []
+# for i in numbers:
+#     if i == 10:
+#         removed.append(i)
+#     else:
+#         res.append(i)
+# print(removed)
+# print(res)
+
+
+
+# Find the second-largest distinct value.
+# numbers = [10, 50, 20, 80, 30, 70]
+# largest = numbers[0]
+# second_largest = numbers[0]
+# for i in numbers:
+#     if i > largest:
+#         second_largest = largest
+#         largest = i
+#     elif i > second_largest:
+#         second_largest = i
+# print(second_largest)
+
+
+
+# numbers = [1, 2, 1, 3, 2, 4, 3, 5]
+# for i in numbers:
+#     if i == i:
+#         numbers.remove(i)
+# print(numbers)
+
+
