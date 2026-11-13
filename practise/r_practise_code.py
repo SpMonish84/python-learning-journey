@@ -200,9 +200,176 @@
 
 
 # Write a program to check if a given number is a palindrome (reads the same forwards and backwards).
-num = 121
-a = str(num)
-if a[0::] == a[::-1]:
-    print("Palindrome")
-else:
-    print("Not Pallindrome")
+# num = 121
+# a = str(num)
+# if a[0::] == a[::-1]:
+#     print("Palindrome")
+# else:
+#     print("Not Pallindrome")
+
+#-------------------------------------------------------------------
+
+# # Create a new list from two given lists such that the new list contains odd numbers from the first list and even numbers from the second list.
+# list1 = [10, 20, 25, 30, 35]
+# list2 = [40, 45, 60, 75, 90]
+# l1 = []
+# for i in list1:
+#     if i % 2 != 0:
+#         l1.append(i)
+# for j in list2:
+#     if j % 2 == 0:
+#         l1.append(j)
+# print(l1)
+#--------------------------------------------------------------
+
+#  Write a program to extract each digit from an integer in the reverse order.
+# number = 7536
+# while number > 0:
+#     digit = number % 10
+#     print(digit, end = "")
+#     number //= 10
+#-----------------------------------------------------------------------
+
+
+#  Print a multiplication table from 1 to 10 in a formatted grid.
+# n = 10
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         print(i*j, end = " ")
+#     print("")
+
+#----------------------------------------------------------------
+
+#  Print a downward half-pyramid pattern using stars (*).
+# n = 5
+# for i in range(n,0,-1):
+#     for j in range(i):
+#         print("*", end= " ")
+#     print("")
+
+# -----------------------------------------------------------------
+
+# Write a function called exponent(base, exp) that returns an integer value of the base raised to the power of the exponent.
+# def exponent(base,exp):
+#     return base**exp
+# base = int(input("Enter the base value: "))
+# exp = int(input("Enter the power value: "))
+# print(f"{base} raises to the power of {exp}: {exponent(base,exp)}")
+#---------------------------------------------------------------------------
+
+# Write a program to print the first 15 terms of the Fibonacci series. The sequence starts with 0 and 1, and each subsequent number is the sum of the two preceding ones.
+
+# n1, n2 = 0, 1
+# for i in range(15):
+#     print(n1, end = " ")
+#     res = n1+n2
+#     n1 = n2
+#     n2 = res
+#----------------------------------------------------------------------------
+
+# Write a program that takes a year as input and determines if it is a leap year.
+# year = int(input("Enter a year: "))
+# if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+#     print(f"{year} is a Leap year")
+# else:
+#     print(f"{year} is not a Leap year")
+
+#----------------------------------------------------------------------
+
+# Write a program that takes two separate dictionaries and merges them into one single dictionary.
+# d1 = {"name": "Alice", "age": 25}
+# d2 = {"city": "New York", "job": "Engineer"}
+# d1.update(d2)
+# print(d1)
+
+#---------------------------------------------------------------------------
+# Take two lists and find the elements that appear in both. Use Sets to perform the operation.
+
+# a = [1, 2, 3, 4, 5]
+# b = [4, 5, 6, 7, 8]
+# print(set(a).intersection(set(b)))
+
+#--------------------------------------------------------------------------------
+
+# Start with a list of 10 numbers. Iterate through them and sort them into two separate lists: one for even numbers and one for odd numbers.
+
+# numbers = [12, 7, 34, 21, 5, 10, 8, 3, 19, 2]
+# eve = []
+# odd = []
+# for i in numbers:
+#     if i % 2 == 0:
+#         eve.append(i)
+# for i in numbers:
+#     if i % 2 != 0:
+#         odd.append(i)
+# print(f"Even numbers: {eve}")
+# print(f"Odd numbers: {odd}")
+
+#---------------------------------------------------------------------------------
+
+# Create a list of 5 words. Write a loop that iterates through the list and prints each word alongside its character count.
+# words = ["Apple", "Banana", "Cherry", "Date", "Elderberry"]
+# for word in words:
+#     count = 0
+
+#     for ch in word:
+#         count += 1
+#     print(f"{word} - {count}", end = " ")
+
+# or
+
+# for i in words:
+#     print(f"{i}-{len(i)}", end = " ")
+
+#---------------------------------------------------------------------------------
+
+# Write a program that counts how many times each word appears in a given paragraph and stores these counts in a dictionary.
+
+# text = "apple banana apple cherry banana apple"
+# frequency = {}
+# for word in text.split():
+#     if word in frequency:
+#         frequency[word] += 1
+#     else:
+#         frequency[word] = 1
+# print(frequency)
+
+#--------------------------------------------------------------------------------
+
+# prime num
+
+# n = 5
+# is_prime = True
+# for i in range(2,n):
+#     if n % i == 0:
+#         is_prime = False
+#         break
+# if is_prime:
+#     print("Prime")
+# else:
+#     print("Not Prime")
+
+# ------------------------------------------------------------------------
+
+# Create a dictionary where the keys are numbers from 1 to 10 and the values are the squares of those numbers (e.g., 2: 4, 3: 9).
+# d = {}
+# for i in range(1,11):
+#     d[i] = i*i
+# print(d)
+
+#-------------------------------------------------------------------------
+
+# Ask the user for a sentence. Replace every empty space in that sentence with an underscore (_) and print the final result.
+# sen = input("Enter a sentence: ")
+# res = sen.replace(" ", "_")
+# print(res)
+
+#---------------------------------------------------------------------------------
+
+# Print a downward number pattern where each row starts with a decreasing value.
+# n = 5
+# for i in range(n,0,-1):
+#     for j in range(i):
+#         print(i-j, end = " ")
+#     print()
+#----------------------------------------------------------------------------------------
