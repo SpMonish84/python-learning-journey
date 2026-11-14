@@ -274,7 +274,7 @@
 # else:
 #     print(f"{year} is not a Leap year")
 
-#----------------------------------------------------------------------
+#------------------------------------------------------------------
 
 # Write a program that takes two separate dictionaries and merges them into one single dictionary.
 # d1 = {"name": "Alice", "age": 25}
@@ -372,4 +372,17 @@
 #     for j in range(i):
 #         print(i-j, end = " ")
 #     print()
+#----------------------------------------------------------------------------------------
+
+# Write a program to check if a user-entered string contains any numeric digits. Use a for loop to examine each character.
+# user_input = "Python3"
+# contains_digit = False
+
+# for char in user_input:
+#     if char.isdigit():
+#         contains_digit = True
+#         break
+
+# print(f"The string '{user_input}' contains digits: {contains_digit}")
+
 #----------------------------------------------------------------------------------------
