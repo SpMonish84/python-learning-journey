@@ -386,3 +386,46 @@
 # print(f"The string '{user_input}' contains digits: {contains_digit}")
 
 #----------------------------------------------------------------------------------------
+
+# Create a countdown timer that starts from a given number and counts down to zero using a while loop.
+# n = 6
+# while n > 1 :
+#     n -= 1
+#     print(n, end = " ")
+# print("Blast off!")
+
+#---------------------------------------------------------------------------------------------
+
+# Write a program to print the first 10 natural numbers using a while loop. Each number should be printed on a new line.
+# num = 0
+# while num <= 9:
+#     num += 1
+#     print(num)
+
+#-------------------------------------------------------------------------------------------
+
+
+# Write a program to display a message “Done” after the successful execution of a for loop that iterates from 0 to 4.
+
+# for i in range(0,5):
+#     print(i)
+# print("Done!")
+
+#--------------------------------------------------------------------------------------------
+
+#  Write a program that accepts a number from the user and calculates the sum of all numbers from 1 up to that number.
+# n = int(input("Enter a n number: "))
+# count = 0
+# for i in range(1,n+1):
+#     count += i
+# print(count)
+
+#-----------------------------------------------------------------------------------------------
+
+# Create a program that takes an integer and prints its multiplication table from 1 to 10.
+
+# n = int(input("Enter a n number: "))
+# for i in range(1, 11):
+#     print(f"{n} X {i} = {n*i}")
+#----------------------------------------------------------------------------------------
+
