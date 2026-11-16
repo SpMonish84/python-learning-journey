@@ -429,3 +429,148 @@
 #     print(f"{n} X {i} = {n*i}")
 #----------------------------------------------------------------------------------------
 
+# Write a program that takes an integer n and prints the cube of every number from 1 to n in the format Current Number is : 1 and the cube is 1.
+
+# n = int(input("Enter a n number: "))
+# for i in range(1, n+1):
+#     print(f"Current Number is : {i}  and the cube is {i*i*i}")
+
+#-----------------------------------------------------------------------------------------------
+
+# Given a list of numbers, iterate through it and print numbers that satisfy these conditions:
+
+# The number must be divisible by five.
+# If the number is greater than 150, skip it and move to the next.
+# If the number is greater than 500, stop the loop entirely.
+
+# num = [12, 75, 150, 180, 145, 525, 50]
+# for i in (num):
+#     if i > 500:
+#         break
+#     elif i > 150:
+#         continue
+#     elif i % 5 == 0:
+#         print(i)
+#-------------------------------------------------------------------------------------------------
+
+# Given a list of numbers, use a loop to count how many times a specific number (e.g., 10) appears.
+
+# l1 = [10, 20, 10, 30, 10, 40, 50]
+# target = 10
+# count = 0
+# for i in l1:
+#     if target == i:
+#         count += 1
+# print(f"{target} appears {count} times")
+
+#------------------------------------------------------------------------------------------------
+
+#  Given a Python list, use a loop to print only the elements that are located at odd index positions (index 1, 3, 5, etc.).
+# l1 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# l2 = []
+# for i in l1:
+#     if i % 2 == 0:
+#         l2.append(i)
+# print(l2)
+#-----------------------------------------------------------------------------------
+
+# Given a list, iterate it in reverse order and print each element.
+
+# l1 = [10, 20, 30, 40, 50]
+# rev = []
+# for i in l1:
+#     rev.insert(0,i)
+# print(rev)
+
+# or
+
+# for i in range(len(l1)-1,-1,-1):
+#     print(l1[i])
+
+#-----------------------------------------------------------------------
+
+# Reverse a string using a for loop (no slicing)
+# a = "python"
+# rev = ""
+# for i in a:
+#     rev = i + rev
+# print(rev)
+
+#---------------------------------------------------------------
+# Write a program that counts the total number of vowels and consonants in a given sentence, ignoring spaces and special characters.
+
+# sen = input("Enter a sentence: ")
+
+# vowels = "aeiou"
+# vow = 0
+# con = 0
+# for i in sen.lower():
+#     if i in vowels:
+#         vow += 1
+#     elif i.isalpha():
+#         con += 1
+# print(f"vowels: {vow}, consonents: {con}")
+
+#----------------------------------------------------------
+
+# Write a program to count the total number of digits in a given integer using a while loop.
+# a = 12345
+# count = 0
+# while a != 0:
+#     a //= 10
+#     count += a
+# print(count)
+
+# a = 1234
+# count = 0
+# sum = 0
+# prod = 1
+
+# for i in str(a):
+#     int(i)//10
+#     count += 1
+#     sum += int(i)
+#     prod *= int(i)
+
+# print(count)
+# print(sum)
+# print(prod)
+#--------------------------------------------------------------
+
+# Write a program to reverse a given integer number (e.g., 76542 should become 24567).
+# n = 76542
+# rev = 0
+# while n != 0:
+#     digit = n % 10
+#     rev = (rev * 10)+digit
+#     n //= 10
+    
+# print(rev)
+#---------------------------------------------------------------
+
+# Write a program to find the largest and smallest digit within a given integer (e.g., in 75869, the largest is 9 and the smallest is 5).
+
+# n = 75869
+# min = 9
+# max = 0
+# while n != 0:
+#     digit = n % 10
+#     if digit < min:
+#         min = digit
+#     if digit > max:
+#         max = digit
+#     n //= 10
+# print(min)
+# print(max)
+
+# The Collatz conjecture states that if you start with any positive integer n, and if n is even, divide it by 2; if n is odd, multiply it by 3 and add 1. Repeat the process. The sequence will always eventually reach 1. Write a program to print this sequence for a given number.
+# n = int(input("Enter a n number: "))
+# print(n, end = " ")
+# while n != 1  :
+#     if n % 2 == 0:
+#         n = n//2
+#     else:
+#         n = (n*3)+1
+#     print(n, end = " ")
+#----------------------------------------------------------------------------------------------------
+
