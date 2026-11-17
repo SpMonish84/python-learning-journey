@@ -574,3 +574,160 @@
 #     print(n, end = " ")
 #----------------------------------------------------------------------------------------------------
 
+# Write a program to check if a number is an Armstrong number. An Armstrong number (for a 3-digit number) is an integer such that the sum of the cubes of its digits is equal to the number itself (e.g., 153 = 1^3 + 5^3 + 3^3).
+
+# n = 153
+# num = str(n)
+# power = len(num)
+# total = 0
+
+# for i in num:
+#     total += int(i)**power
+
+# if total == n:
+#     print("Armstrong")
+# else:
+#     print("Not a Armstrong")
+#---------------------------------------------------------------------------
+
+# Write a program to print a right-angled triangle pattern where each row contains increasing numbers up to the row number.
+# for i in range(1,6):
+    # for j in range(1,i+1):
+    #     print(j,end = " ")
+    # print()
+
+#--------------------------------------------------------------------------
+
+# Write a program to use for loop to print the following reverse number pattern:
+# for i in range(5,0,-1):
+#     for j in range(i, 0,-1):
+#         print(j, end = " ")
+#     print()
+#-----------------------------------------------------------------------------
+
+#Write a program to print a pattern of alternate numbers from 1 to 20 (e.g., 1, 3, 5…).
+# for i in range(1,21,2):
+#     print(i, end = " ")
+#----------------------------------------------------------------------
+
+# Write a program to print a triangle pattern where each row consists of the same letter, and the letter changes (increments) with each new row.
+
+# for i in range(64, 70):
+#     for j in range(64,i):
+#         print(chr(i), end = " ")
+#     print()
+
+#----------------------------------------------------------------
+
+# Write a program to print a triangle pattern where each row consists of the same letter, and the letter changes (increments) with each new row.
+
+# for i in range(5):
+#     for j in range(5):
+#         if i == 0 or i == 5-1 or j == 0 or j == 5-1:
+#             print("*", end= " ")
+#         else:
+#             print(" ", end = " ")
+#     print()
+
+#---------------------------------------------------------------------
+
+#  Write a program to print the following pattern using nested loops:
+
+# n = 5
+# for i in range(1,n+1):
+#     for j in range(1,i+1):
+#         print("*", end = " ")
+#     print()
+# for i in range(n-1,0,-1):
+#     for j in range(0,i):
+#         print("*", end = " ")
+#     print()
+
+#-------------------------------------------------------------
+
+# Given a list of numbers, create a new list where each element is the sum of all elements from the original list up to that position.
+
+# l1 = [1, 2, 3, 4]
+# l2 = []
+# temp = 0
+# for i in l1:
+#     temp += i
+#     l2.append(temp)
+# print(l2)
+
+#--------------------------------------------------------------------------------------
+
+# Given a dictionary of student scores, create a new dictionary that only includes students who scored above a certain threshold (e.g., 75).
+
+
+# s1 = {"Alice": 85, "Bob": 70, "Charlie": 95, "David": 60}
+# s2 = {}
+# threshold = 75
+# for key,values in s1.items():
+#     if values >= threshold:
+#         s2[key] = values
+# print(s2)
+
+#-------------------------------------------------------------------
+
+# Write a program to remove all duplicate values from a list using a loop, maintaining the original order of elements.
+
+# l1 = [1, 2, 2, 3, 4, 4, 4, 5]
+# l2 = []
+# for i in l1:
+#     if i not in l2:
+#         l2.append(i)
+# print(l2)
+
+# -------------------------------------------------------------------------------------
+
+# Given a list of integers, move all even numbers to the beginning of the list and all odd numbers to the end.
+
+# l1 = [1, 2, 3, 4, 5, 6]
+# l2 = []
+# for i in l1:
+#     if i % 2 == 0:
+#         l2.append(i)
+# for j in l1:
+#     if j%2 != 0:
+#         l2.append(j)
+
+# print(l2)
+#---------------------------------------------------------------
+
+# Write a program to display the Fibonacci sequence up to 10 terms. The sequence starts with 0 and 1, and each subsequent number is the sum of the two preceding ones.
+# n,n1 = 0,1
+# for i in range(0,10):
+#     print(n, end = " ")
+#     res = n + n1
+#     n = n1
+#     n1 = res
+
+# ----------------------------------------------------------------
+
+# Write a program to check if a number is a “Perfect Number.” A perfect number is a positive integer that is equal to the sum of its proper divisors (excluding the number itself). For example, 6 is perfect because 1 + 2 + 3 = 6.
+# n = int(input("Enter a n number: "))
+# temp = 0
+
+# for i in range(1,n):
+#     if n % i == 0:
+#         temp += i
+# if temp == n:
+#     print("Perfect Number")
+# else:
+#     print("Not Perfect Number")
+
+#--------------------------------------------------------------------
+
+#  Manually convert a binary string (e.g., "1101") into its decimal integer equivalent using a loop. Do not use int(binary, 2).
+# n = input("Enter a Binary Value: ")
+# dec_val = 0
+# rev_bin = n[::-1]
+
+# for i in range(len(rev_bin)):
+#     if rev_bin[i] == "1":
+#         dec_val += 2 ** i
+
+# print(dec_val)
+#---------------------------------------------------------------------
+        
