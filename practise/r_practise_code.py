@@ -743,8 +743,23 @@
 
 #--------------------------------------------------------------------------
 
+# Write a function called demo() that accepts two parameters: a name and an age. The function should print these values directly to the console.
 
+# def demo(name, age):
+#     print(f"My Name is {name}, my age is {age}")
+# demo("Monish", 21)
 
+#--------------------------------------------------------------------------
 
+# Create a function func1() such that it can accept a variable number of arguments and print all of them. Whether you pass two numbers or five, the function should handle them all without error.
+# def func1(*arguments):
+#     print(f"printing values: ")
+#     for i in arguments:
+#         print(i)
 
+# func1(20, 40, 60)
+# func1(80,100)
 
+#------------------------------------------------------------------------------
+
+#  Write a function calculation() that accepts two variables and calculates both addition and subtraction. The function must return both results in a single return statement.
