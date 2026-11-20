@@ -763,3 +763,51 @@
 #------------------------------------------------------------------------------
 
 #  Write a function calculation() that accepts two variables and calculates both addition and subtraction. The function must return both results in a single return statement.
+# def calculation(a,b):
+#     return a+b,a-b
+# res = calculation(40,10)
+# print(res)
+
+#------------------------------------------------------------------------------
+
+# Create a function show_employee() that accepts an employee’s name and salary. If the salary is not provided in the function call, the function should automatically assign a default value of 9000.
+# def show_employee(name, salary = 9000):
+#     print(f"Name: {name}, Salary: {salary}")
+# show_employee("Ben", "12000")
+# show_employee("Ben")
+#--------------------------------------------------------------------------
+
+# Create an outer function that accepts two parameters, a and b. Inside, create an inner function that calculates the addition of a and b. The outer function should then add 5 to that sum and return the final result.
+
+# def calculate(a,b):
+#     def add():
+#         add = a + b
+#         return add
+#     return add() + 5
+# print(calculate(5,10))
+
+# ------------------------------------------------------------------------------
+
+# Write a recursive function addition() that calculates the sum of numbers from 0 to 10. A recursive function is a function that calls itself to solve smaller instances of the same problem.
+# def add(n):
+#     if n > 0 :
+#         return n + add(n-1)
+#     else:
+#         return 0
+# print(add(5))
+#------------------------------------------------------------------------------------
+
+# Assign a different name to the function display_student(name, age) and call it using the new name. For example, assign it to a variable called show_student.
+# def display_student(name, age):
+#     print(name,age)
+# show_student = display_student
+# show_student("Monish", 22)
+
+#-------------------------------------------------------------------------------------
+
+# Create a function that generates a list of all even numbers between 4 and 30.
+# def range_num(n):
+#     l1 = []
+#     if n > 0:
+#         if n % 2 == 0:
+#             return append
