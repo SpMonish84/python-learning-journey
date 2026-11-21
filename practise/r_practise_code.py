@@ -719,6 +719,7 @@
 
 #--------------------------------------------------------------------
 
+
 #  Manually convert a binary string (e.g., "1101") into its decimal integer equivalent using a loop. Do not use int(binary, 2).
 # n = input("Enter a Binary Value: ")
 # dec_val = 0
@@ -731,6 +732,7 @@
 # print(dec_val)
 #---------------------------------------------------------------------
 
+
 # Given a 2D list (matrix), find the row and column index of a target value.
 
 # matrix = [[10, 20], [30, 40], [50, 60]]
@@ -742,6 +744,7 @@
 #             print(f"Target {target} found at Row: {i}, Column: {j}")
 
 #--------------------------------------------------------------------------
+
 
 # Write a function called demo() that accepts two parameters: a name and an age. The function should print these values directly to the console.
 
@@ -805,9 +808,3 @@
 
 #-------------------------------------------------------------------------------------
 
-# Create a function that generates a list of all even numbers between 4 and 30.
-# def range_num(n):
-#     l1 = []
-#     if n > 0:
-#         if n % 2 == 0:
-#             return append
