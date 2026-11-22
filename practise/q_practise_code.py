@@ -33,3 +33,10 @@
 #     res += int(i)
 # print(res)
 
+#----------------------------------------------------------------------------
+# lambda functions are ananymous functions
+
+# (lambda a,b: a**b)(2,3)
+
+# lam_calc = (lambda a,b:a**b)
+# print(lam_calc(3,2))
