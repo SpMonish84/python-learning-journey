@@ -991,46 +991,7 @@ text = "Python"
 # res = txt.translate(table)
 # print(res)
 
-# Create a table that changes "P" → "p" and "Y" → "y", then apply it to "PYTHON".
-# table = str.maketrans("PY","py")
-# txt = "PYTHON"
-# res = txt.translate(table)
-# print(res)
-
-# Delete all vowels from "programming" using translate().
-# table = str.maketrans("","","aeiouAEIOU")
-# txt = "Python Programming"
-# res = txt.translate(table)
-# print(res)
-
-# Take a sentence from the user and replace all spaces with underscores.
-# txt = input("Enter a sentence: ")
-# print(txt.replace(" ","_"))
-
-# Take a sentence and replace every comma with a semicolon.
-# txt = input("Enter a sentence: ")
-# print(txt.replace(",",":"))
-
-# Take a word from the user and convert all vowels into numbers (a→1, e→2, i→3, o→4, u→5) using translate().
-# table = str.maketrans("aeiouAEIOU","1234512345")
-# txt = input("Enter the sentence: ")
-# res = txt.translate(table)
-# print(res)
-
-# Take a string and remove all vowels using translate().
-# table = str.maketrans("","","aeiouAEIOU")
-# txt = input("Enter the sentence: ")
-# res = txt.translate(table)
-# print(res)
-
-# Ask the user for two characters: one to replace and one replacement character, then replace all occurrences in the input string using replace().
-# txt = input("Enter a sentence: ")
-# old = input("Enter the character from sentence to replace: ")
-# new = input("Enter the new character to replace with: ")
-# print(txt.replace(old, new))
-#---------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# 42. format() - replaces {} placeholders in a string with values. You can use multiple placeholders
+# format() - replaces {} placeholders in a string with values. You can use multiple placeholders
 # "template {}".format(value)
 # name = "Monish"
 # txt = "Hello my name is {}".format(name)
@@ -1056,19 +1017,12 @@ text = "Python"
 # )
 # print(txt)
 
-# formatting numbers
+
 # price = 123.45678
 # text = "Price: {:.2f}".format(price)
 # print(text)
 
-# number formatting
-# d → integer
-# f → floating-point
-# % → percentage
-# , → thousands separator
-# b → binary
-# o → octal
-# x → hexadecimal
+
 
 # price = 1500000000
 # text = "Price {:.2%}".format(price)
@@ -1081,7 +1035,7 @@ text = "Python"
 #     "age" : 21
 # }
 # print("My name is {name}, and age is {age}".format_map(data))
-#-----------------------------------------------------------------------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # 44. encode() - converts a Python string (str) into bytes (bytes) using a specified character encoding.
 # string.encode(encoding="utf-8", errors="strict")
@@ -1106,7 +1060,7 @@ text = "Python"
 # txt = "Hello World"
 # print(txt.encode(encoding = "utf-8"))
 
-#----------------------------------------------------------------------------------------------------------------------------
+# # ----------------------------------------------------------------------------------------------------------------------------
 # 46. startswith() - checks whether a string begins with a specified substring.
 # string.startswith(prefix)
 # txt = "hello Python Programming"
@@ -1126,4 +1080,4 @@ text = "Python"
 # file = "photo.jpg"
 # print(file.endswith(("Python",".jpg",".png",".img")))
 
-#---------------------------------------------------------------------------------------------------------------------------------------
+# # ---------------------------------------------------------------------------------------------------------------------------------------

@@ -40,3 +40,5 @@
 
 # lam_calc = (lambda a,b:a**b)
 # print(lam_calc(3,2))
+
+
