@@ -26,3 +26,30 @@ print(Bmw.speed_limit)
 Bmw.is_supercar()
 Bmw.display()
 
+
+
+balance = 1000
+def calculator(x,y):
+    res = x+y
+    print(res)
+    global balance 
+    balance = 2000
+    print(balance)
+
+print(balance)
+# print(res)
+calculator(10,20)
+
+
+class Parent:
+    def get_mobile(self): # instance method
+        print("Samsung Edge")
+
+class child(Parent):
+    def get_bike(self):
+        print("Duke 350")
+
+
+c1 = child()
+c1.get_bike()
+c1.get_mobile()
